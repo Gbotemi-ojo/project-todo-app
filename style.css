@@ -1,41 +1,29 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap'); */
 :root {
-    /* Primary */
     --Bright-Blue: hsl(220, 98%, 61%);
     --Check-Background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
-
-    /* light theme */
     --Very-Light-Gray: hsl(0, 0%, 98%);
     --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
     --Light-Grayish-Blue: hsl(233, 11%, 84%);
     --Dark-Grayish-Blue: hsl(236, 9%, 61%);
     --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
-
-    /* Dark theme */
     --Very-Dark-Blue: hsl(235, 21%, 11%);
     --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
     --Light-Grayish-Blue: hsl(234, 39%, 85%);
-    /* --Light-Grayish-Blue: hsl(236, 33%, 92%); hover*/
     --Dark-Grayish-Blue: hsl(234, 11%, 52%);
     --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
     --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
-
-    /* background Images */
     --theme-background: url('images/bg-desktop-dark.jpg');
 }
-
 .darkmode {
     --theme-background: url('images/bg-desktop-light.jpg');
     --Very-Dark-Blue: hsl(0, 0%, 98%);
     --Very-Dark-Desaturated-Blue: white;
     --Very-Light-Gray: hsl(237, 14%, 26%);
 }
-
 body {
     margin: 0;
     padding: 0;
 }
-
 #todoContainer {
     display: flex;
     flex-direction: column;
@@ -43,21 +31,18 @@ body {
     justify-content: center;
     width: 100vw;
 }
-
 .upperDesign {
     height: 40vh;
     width: 100vw;
     background: var(--theme-background);
     background-size: cover;
 }
-
 .lowerDesign {
     min-height: 60vh;
     max-height: fit-content;
     width: 100vw;
     background-color: var(--Very-Dark-Blue);
 }
-
 .todoApp {
     position: relative;
     display: flex;
@@ -68,12 +53,10 @@ body {
     left: 35vw;
     width: 30%;
 }
-
 .circle {
     min-width: 30px;
     min-height: 30px;
     border-radius: 50%;
-    /* background-image: var(--Check-Background); */
     background-image: white;
     display: flex;
     align-items: center;
@@ -86,7 +69,6 @@ body {
 .circle > img:nth-child(1){
     visibility: hidden;
 }
-
 .header {
     display: flex;
     width: 100%;
@@ -94,7 +76,6 @@ body {
     align-items: center;
     font-weight: 800;
 }
-
 .inputData{
     width: 100%;
     background-color: var(--Very-Dark-Desaturated-Blue);
@@ -103,14 +84,12 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-
 .inputData>div:nth-child(1) {
     border: 1px solid var(--Very-Light-Gray);
     border-radius: 50%;
     width: 25px;
     height: 25px;
 }
-
 .inputData>input {
     width: 85%;
     height: 80%;
@@ -120,30 +99,24 @@ body {
     outline: none;
     font-size: 20px;
 }
-
 .header>div:nth-child(1) {
     font-size: 40px;
     color: white;
     letter-spacing: 10px;
 }
-
 .todoListContainer {
     width: 100%;
     background-color: var(--Very-Dark-Desaturated-Blue);
 }
-
 .todoList {
     width: 100%;
 }
-
 .activeTodo {
     display: none;
 }
-
 .completedTodo {
     display: none;
 }
-
 .todo {
     display: flex;
     align-items: center;
@@ -154,47 +127,38 @@ body {
     margin-left: 20px;
     color: var(--Very-Light-Gray);
 }
-
 .todo>div:first-child {
     display: flex;
     width: 100%;
     align-items: center;
     gap: 15px;
 }
-
 .todoApp {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-
 .navigation {
     display: flex;
     justify-content: space-around;
     min-height: 50px;
     align-items: center;
 }
-
 .navigation>div:nth-child(1) {
     color: var(--Dark-Grayish-Blue);
 }
-
 .navigation>div:nth-child(2)>div:first-child {
     color: var(--Bright-Blue);
 }
-
 .navigation>div:nth-child(2)>div:nth-child(2) {
     color: var(--Dark-Grayish-Blue);
 }
-
 .navigation>div:nth-child(2)>div:nth-child(3) {
     color: var(--Dark-Grayish-Blue);
 }
-
 .navigation>div:nth-child(3) {
     color: var(--Dark-Grayish-Blue);
 }
-
 .navigation>div:nth-child(2) {
     display: flex;
     width: 30%;
@@ -339,89 +303,4 @@ body {
     .navigation>div:nth-child(2) {
         display: none;
     }
-}
-
-.test {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-
-
-.one {
-    background-color: hsl(220, 98%, 61%);
-    width: 10vw;
-    height: 10vh;
-}
-
-.two {
-    background-color: hsl(0, 0%, 98%);
-    width: 10vw;
-    height: 10vh;
-}
-
-.three {
-    background-color: hsl(236, 33%, 92%);
-    width: 10vw;
-    height: 10vh;
-}
-
-.four {
-    background-color: hsl(233, 11%, 84%);
-    width: 10vw;
-    height: 10vh;
-}
-
-.five {
-    background-color: hsl(236, 9%, 61%);
-    width: 10vw;
-    height: 10vh;
-}
-
-.six {
-    background-color: hsl(235, 19%, 35%);
-    width: 10vw;
-    height: 10vh;
-}
-
-.seven {
-    background-color: hsl(235, 21%, 11%);
-    width: 10vw;
-    height: 10vh;
-}
-
-.eight {
-    background-color: hsl(235, 24%, 19%);
-    width: 10vw;
-    height: 10vh;
-}
-
-.nine {
-    background-color: hsl(234, 39%, 85%);
-    width: 10vw;
-    height: 10vh;
-}
-
-.ten {
-    background-color: hsl(236, 33%, 92%);
-    width: 10vw;
-    height: 10vh;
-}
-
-.eleven {
-    background-color: hsl(234, 11%, 52%);
-    width: 10vw;
-    height: 10vh;
-}
-
-.twelve {
-    background-color: hsl(233, 14%, 35%);
-    width: 10vw;
-    height: 10vh;
-}
-
-.thirteen {
-    background-color: hsl(237, 14%, 26%);
-    width: 10vw;
-    height: 10vh;
 }
